@@ -1,0 +1,10 @@
+A **Aula 14** aborda **estimativas de projeto de software**, que são fundamentais no planejamento de projetos de software, incluindo previsões de esforço, tempo e recursos necessários. As estimativas ajudam a responder questões sobre prazos, custos, equipe e recursos, sendo essenciais para a gestão eficaz de projetos.
+
+Há diversas técnicas de estimativas, como:
+1. **Estimativa por Analogias**: Compara projetos atuais com anteriores semelhantes.
+2. **Estimativa Paramétrica**: Usa modelos matemáticos baseados em parâmetros específicos.
+3. **Estimativa por Pontos de Função/Caso de Uso**: Baseia-se na quantificação de funcionalidades ou casos de uso.
+4. **Estimativas Heurísticas**: Baseadas na experiência e julgamento da equipe.
+5. **Planejamento Ágil**: Estimativas contínuas ajustadas ao longo do tempo, como em metodologias Scrum.
+
+Cada método tem suas particularidades, mas todas estão sujeitas a incertezas, exigindo ajustes contínuos à medida que o projeto avança.

@@ -1,0 +1,91 @@
+A aula prática de **Estimativa de Software** tem como objetivo desenvolver habilidades de planejamento e colaboração através da criação de cronogramas de projeto utilizando o **Trello** com ferramentas como **Placker** ou **Elegantt**. Os alunos são divididos em equipes de 3 a 5 pessoas e têm 30 minutos para criar um painel de estimativa para um projeto específico: um aplicativo em Java que acessa notas e faltas armazenadas em um banco de dados **MySQL**. O projeto deve seguir **Metodologias Ágeis** e o modelo de desenvolvimento **Espiral**.
+
+As equipes devem criar quadros no Trello com as listas "To Do", "Doing" e "Done", e detalhar tarefas com descrições e prazos estimados usando a técnica de **Planning Poker**.
+--- Conteúdo de ./aula 14 exercicio.txt foi adicionado ---
+
+A **Aula 14** aborda **estimativas de projeto de software**, que são fundamentais no planejamento de projetos de software, incluindo previsões de esforço, tempo e recursos necessários. As estimativas ajudam a responder questões sobre prazos, custos, equipe e recursos, sendo essenciais para a gestão eficaz de projetos.
+
+Há diversas técnicas de estimativas, como:
+1. **Estimativa por Analogias**: Compara projetos atuais com anteriores semelhantes.
+2. **Estimativa Paramétrica**: Usa modelos matemáticos baseados em parâmetros específicos.
+3. **Estimativa por Pontos de Função/Caso de Uso**: Baseia-se na quantificação de funcionalidades ou casos de uso.
+4. **Estimativas Heurísticas**: Baseadas na experiência e julgamento da equipe.
+5. **Planejamento Ágil**: Estimativas contínuas ajustadas ao longo do tempo, como em metodologias Scrum.
+
+Cada método tem suas particularidades, mas todas estão sujeitas a incertezas, exigindo ajustes contínuos à medida que o projeto avança.
+--- Conteúdo de ./aula 14.txt foi adicionado ---
+
+A Aula 15a aborda o **Desenvolvimento Ágil** no contexto da Engenharia de Software, com base no **Manifesto Ágil** de 2001. O manifesto estabelece quatro valores principais: foco em indivíduos, software funcional, colaboração com clientes e adaptação a mudanças. A aula também explica os **12 princípios do Manifesto Ágil**, enfatizando entregas rápidas, comunicação constante e simplicidade.
+
+A metodologia **Extreme Programming (XP)**, uma prática ágil, é destacada, sendo ideal para equipes pequenas e projetos com requisitos em constante mudança. O fluxo de um projeto XP envolve a criação de histórias do usuário, planejamento de entregas, e reuniões diárias para monitoramento do progresso (Stand Up Meeting). Ao final de cada iteração, o software é validado e liberado em pequenos incrementos.
+
+A **Aula 15b** explora o **framework Scrum**, uma metodologia ágil de gerenciamento de projetos. O Scrum é inspirado no rugby, onde o trabalho em equipe é essencial, e os membros dependem uns dos outros. O framework é amplamente utilizado para projetos complexos e imprevisíveis, com o foco em interações entre pessoas e desenvolvimento incremental por meio de ciclos chamados **Sprints**.
+
+O Scrum envolve papéis essenciais, como o **Product Owner** (responsável pela visão do produto e pela priorização das tarefas), o **Scrum Master** (facilitador que garante a adoção dos princípios do Scrum) e o **Time de Desenvolvimento** (responsável por executar as tarefas). Durante um Sprint, ocorrem reuniões diárias (**Daily Stand-up**) para revisar o progresso, discutir obstáculos e planejar o dia. Ao final de cada Sprint, há uma revisão e uma retrospectiva para identificar melhorias. O uso de quadros visuais, como o **Kanban**, também é destacado para manter a transparência no andamento das tarefas.
+--- Conteúdo de ./aula 15.txt foi adicionado ---
+
+A **Aula 16a** aborda **estratégias de testes de software**, explicando como garantir a qualidade, a funcionalidade e a segurança de um sistema. O objetivo dos testes de software é identificar defeitos, validar requisitos e melhorar continuamente o produto. A aula detalha diferentes tipos de testes, como **unitários**, **de integração**, **de sistema**, **de aceitação**, **de regressão**, **de desempenho**, **de segurança**, entre outros.
+
+Dois principais tipos de abordagem são apresentados: **Testes de Caixa-Branca**, onde o testador tem acesso ao código-fonte e verifica a lógica interna, e **Testes de Caixa-Preta**, que verificam as funcionalidades sem conhecimento do código. A combinação dessas estratégias permite uma cobertura mais completa dos testes, ajudando a identificar e corrigir problemas antes de o software ser lançado.
+
+A **Aula 16b** aborda os **tipos de testes de software** utilizados para garantir a qualidade e o bom funcionamento dos sistemas. Os testes de software são classificados em várias categorias, cada uma com um foco específico:
+
+1. **Testes de Unidade**: Avaliam partes isoladas do código, como funções e métodos.
+2. **Testes de Integração**: Verificam a interação entre diferentes módulos ou componentes.
+3. **Testes de Sistema**: Avaliam o sistema completo para garantir que atende aos requisitos funcionais.
+4. **Testes de Aceitação do Usuário**: Feitos pelos usuários finais para validar se o software atende suas expectativas.
+5. **Testes de Desempenho**: Avaliam como o sistema lida com cargas e medem sua eficiência.
+6. **Testes de Segurança**: Focam em identificar vulnerabilidades e ameaças.
+7. **Testes de Usabilidade**: Avaliam a experiência e a facilidade de uso para os usuários finais.
+
+Cada tipo de teste é escolhido de acordo com os objetivos e as necessidades do projeto. A aula também enfatiza a importância de aplicar estratégias eficazes para promover a qualidade e a segurança do software.
+
+
+--- Conteúdo de ./aula 16.txt foi adicionado ---
+
+A **Aula 17** aborda a **automatização de testes de software**, destacando sua importância para aumentar a eficiência, cobertura e confiabilidade dos testes. A automatização é utilizada para substituir testes manuais, permitindo uma execução mais rápida, repetitiva e consistente, além de fornecer feedback mais ágil aos desenvolvedores.
+
+Os principais tipos de testes que podem ser automatizados incluem:
+- **Testes Unitários**: Avaliam partes individuais do código.
+- **Testes de Integração**: Verificam a interação entre módulos.
+- **Testes de Regressão**: Garantem que novas alterações não causem defeitos.
+- **Testes de Desempenho**: Avaliam a capacidade do sistema sob carga.
+- **Testes de API e Interface de Usuário (UI)**: Asseguram o bom funcionamento das interfaces e APIs.
+
+A aula também apresenta os benefícios, como **redução de esforço manual** e **melhoria da cobertura** de testes, além de desafios, como a **necessidade de habilidades técnicas** e a **manutenção dos scripts**. Técnicas avançadas, como a **integração de IA** e **machine learning** para otimização de testes, bem como a automatização em **pipelines CI/CD**, também são discutidas.
+
+A automatização é essencial no desenvolvimento ágil e DevOps, além de acompanhar tendências emergentes, como testes para **blockchain** e **IoT**.
+--- Conteúdo de ./aula 17.txt foi adicionado ---
+
+A **Aula 18** aborda os conceitos de **Integração, Entrega e Implantação Contínua** de software, práticas fundamentais na Engenharia de Software moderna. O processo de integração envolve a combinação de módulos e sistemas de software, utilizando abordagens como **integração incremental** e **Big Bang**, com destaque para a importância de testes e automação para garantir a qualidade e coesão dos sistemas.
+
+A **entrega de software** é o momento em que o produto é disponibilizado para os usuários, podendo ser **parcial**, **incremental** ou **total**, sendo essencial o planejamento, testes rigorosos e suporte pós-entrega. 
+
+A **implantação contínua** automatiza o processo de entrega em produção, garantindo que novas versões sejam lançadas frequentemente e com segurança, sem intervenção humana. Ferramentas de CI/CD, monitoramento, e gerenciamento de dependências são essenciais para o sucesso dessa prática.
+
+Exemplos práticos incluem empresas como **Netflix**, **Amazon** e **GitHub**, que utilizam essas técnicas para manter alta qualidade e disponibilidade de seus serviços. A aula destaca ainda os desafios culturais e técnicos, mas reforça os benefícios em termos de redução de riscos e melhoria contínua.
+--- Conteúdo de ./aula 18.txt foi adicionado ---
+
+A **Aula 19** aborda três processos fundamentais no desenvolvimento de software: **verificação, validação e gestão de requisitos**. 
+
+- **Verificação de Requisitos** garante que os requisitos são claros, consistentes e aderem aos padrões estabelecidos, utilizando métodos como revisões técnicas e checklists.
+- **Validação de Requisitos** verifica se os requisitos atendem às necessidades dos stakeholders e são implementáveis. Prototipagem e testes de aceitação são usados para confirmar que o sistema cumpre os requisitos esperados.
+- **Gestão de Requisitos** envolve o controle contínuo de mudanças, rastreamento e priorização dos requisitos ao longo do ciclo de vida do projeto. Métodos como rastreabilidade e priorização garantem que o escopo seja mantido e ajustado conforme necessário.
+
+Exemplos reais incluem sistemas bancários e de e-commerce, onde esses processos evitam problemas futuros, garantem a adequação do sistema e melhoram a qualidade do produto final.
+
+A combinação desses três processos é essencial para reduzir retrabalho, mitigar riscos e garantir que o software final atenda às expectativas dos clientes e do negócio.
+--- Conteúdo de ./aula 19.txt foi adicionado ---
+
+Essa aula aborda métricas de software como ferramentas para medir e avaliar aspectos do desenvolvimento, qualidade e desempenho de projetos de software. As métricas ajudam a controlar, gerenciar e melhorar processos e produtos, sendo divididas em primárias (fatos objetivos, como defeitos e custos) e secundárias (indicadores baseados em relações, como densidade de defeitos).
+
+As principais categorias de métricas são:
+
+Métricas de Processo: Avaliam a eficiência dos processos de desenvolvimento, como tempo de ciclo e taxa de retrabalho.
+Métricas de Produto: Focam no código-fonte e produto final, como linhas de código e complexidade ciclomática.
+Métricas de Qualidade: Avaliam atributos como confiabilidade e correção, exemplificadas pela taxa de defeitos por linha de código e tempo médio entre falhas.
+Métricas de Uso: Monitoram o uso do software, incluindo taxa de utilização de funcionalidades e retenção de usuários.
+Métricas de Projeto: Avaliam a organização do código, como acoplamento e coesão entre módulos.
+Métricas de Teste: Avaliam a eficácia dos testes, como cobertura de código e taxa de falhas de testes.
+A aula destaca que o uso de métricas permite melhor tomada de decisões, identificação de problemas e otimização de processos. Por outro lado, a ausência de métricas pode levar a decisões baseadas em intuição, falta de transparência e perda de oportunidades de melhoria.
+--- Conteúdo de ./aula13.txt foi adicionado ---

@@ -1,0 +1,3 @@
+A aula prática de **Estimativa de Software** tem como objetivo desenvolver habilidades de planejamento e colaboração através da criação de cronogramas de projeto utilizando o **Trello** com ferramentas como **Placker** ou **Elegantt**. Os alunos são divididos em equipes de 3 a 5 pessoas e têm 30 minutos para criar um painel de estimativa para um projeto específico: um aplicativo em Java que acessa notas e faltas armazenadas em um banco de dados **MySQL**. O projeto deve seguir **Metodologias Ágeis** e o modelo de desenvolvimento **Espiral**.
+
+As equipes devem criar quadros no Trello com as listas "To Do", "Doing" e "Done", e detalhar tarefas com descrições e prazos estimados usando a técnica de **Planning Poker**.

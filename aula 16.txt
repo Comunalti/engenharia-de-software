@@ -1,0 +1,16 @@
+A **Aula 16a** aborda **estratégias de testes de software**, explicando como garantir a qualidade, a funcionalidade e a segurança de um sistema. O objetivo dos testes de software é identificar defeitos, validar requisitos e melhorar continuamente o produto. A aula detalha diferentes tipos de testes, como **unitários**, **de integração**, **de sistema**, **de aceitação**, **de regressão**, **de desempenho**, **de segurança**, entre outros.
+
+Dois principais tipos de abordagem são apresentados: **Testes de Caixa-Branca**, onde o testador tem acesso ao código-fonte e verifica a lógica interna, e **Testes de Caixa-Preta**, que verificam as funcionalidades sem conhecimento do código. A combinação dessas estratégias permite uma cobertura mais completa dos testes, ajudando a identificar e corrigir problemas antes de o software ser lançado.
+
+A **Aula 16b** aborda os **tipos de testes de software** utilizados para garantir a qualidade e o bom funcionamento dos sistemas. Os testes de software são classificados em várias categorias, cada uma com um foco específico:
+
+1. **Testes de Unidade**: Avaliam partes isoladas do código, como funções e métodos.
+2. **Testes de Integração**: Verificam a interação entre diferentes módulos ou componentes.
+3. **Testes de Sistema**: Avaliam o sistema completo para garantir que atende aos requisitos funcionais.
+4. **Testes de Aceitação do Usuário**: Feitos pelos usuários finais para validar se o software atende suas expectativas.
+5. **Testes de Desempenho**: Avaliam como o sistema lida com cargas e medem sua eficiência.
+6. **Testes de Segurança**: Focam em identificar vulnerabilidades e ameaças.
+7. **Testes de Usabilidade**: Avaliam a experiência e a facilidade de uso para os usuários finais.
+
+Cada tipo de teste é escolhido de acordo com os objetivos e as necessidades do projeto. A aula também enfatiza a importância de aplicar estratégias eficazes para promover a qualidade e a segurança do software.
+

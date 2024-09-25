@@ -1,0 +1,12 @@
+A **Aula 17** aborda a **automatização de testes de software**, destacando sua importância para aumentar a eficiência, cobertura e confiabilidade dos testes. A automatização é utilizada para substituir testes manuais, permitindo uma execução mais rápida, repetitiva e consistente, além de fornecer feedback mais ágil aos desenvolvedores.
+
+Os principais tipos de testes que podem ser automatizados incluem:
+- **Testes Unitários**: Avaliam partes individuais do código.
+- **Testes de Integração**: Verificam a interação entre módulos.
+- **Testes de Regressão**: Garantem que novas alterações não causem defeitos.
+- **Testes de Desempenho**: Avaliam a capacidade do sistema sob carga.
+- **Testes de API e Interface de Usuário (UI)**: Asseguram o bom funcionamento das interfaces e APIs.
+
+A aula também apresenta os benefícios, como **redução de esforço manual** e **melhoria da cobertura** de testes, além de desafios, como a **necessidade de habilidades técnicas** e a **manutenção dos scripts**. Técnicas avançadas, como a **integração de IA** e **machine learning** para otimização de testes, bem como a automatização em **pipelines CI/CD**, também são discutidas.
+
+A automatização é essencial no desenvolvimento ágil e DevOps, além de acompanhar tendências emergentes, como testes para **blockchain** e **IoT**.

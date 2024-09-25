@@ -1,0 +1,11 @@
+Essa aula aborda métricas de software como ferramentas para medir e avaliar aspectos do desenvolvimento, qualidade e desempenho de projetos de software. As métricas ajudam a controlar, gerenciar e melhorar processos e produtos, sendo divididas em primárias (fatos objetivos, como defeitos e custos) e secundárias (indicadores baseados em relações, como densidade de defeitos).
+
+As principais categorias de métricas são:
+
+Métricas de Processo: Avaliam a eficiência dos processos de desenvolvimento, como tempo de ciclo e taxa de retrabalho.
+Métricas de Produto: Focam no código-fonte e produto final, como linhas de código e complexidade ciclomática.
+Métricas de Qualidade: Avaliam atributos como confiabilidade e correção, exemplificadas pela taxa de defeitos por linha de código e tempo médio entre falhas.
+Métricas de Uso: Monitoram o uso do software, incluindo taxa de utilização de funcionalidades e retenção de usuários.
+Métricas de Projeto: Avaliam a organização do código, como acoplamento e coesão entre módulos.
+Métricas de Teste: Avaliam a eficácia dos testes, como cobertura de código e taxa de falhas de testes.
+A aula destaca que o uso de métricas permite melhor tomada de decisões, identificação de problemas e otimização de processos. Por outro lado, a ausência de métricas pode levar a decisões baseadas em intuição, falta de transparência e perda de oportunidades de melhoria.

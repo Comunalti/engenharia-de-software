@@ -1,0 +1,28 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-09-25T18:33:52-03:00",
+  "id": "docs",
+  "duration": 0,
+  "title": "Revisão Completa das Aulas de Engenharia de Software",
+  "authors": "Comunalti",
+  "summary": "“Breve descrição do Codelab”",
+  "source": "docs.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelabs"
+  ],
+  "tags": [
+    "codelab",
+    "markdown",
+    "tutorial",
+    "web"
+  ],
+  "feedback": "https://link-de-feedback.com",
+  "url": "docs"
+}

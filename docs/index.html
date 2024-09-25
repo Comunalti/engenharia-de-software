@@ -1,0 +1,591 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Revisão Completa das Aulas de Engenharia de Software</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="docs"
+                  title="Revisão Completa das Aulas de Engenharia de Software"
+                  environment="web"
+                  feedback-link="https://link-de-feedback.com">
+    
+      <google-codelab-step label="Aula 13: 
+Métricas de Software" duration="0">
+        <h2 is-upgraded><strong>Introdução às Métricas de Software</strong></h2>
+<p>As métricas de software são ferramentas essenciais que permitem medir e avaliar quantitativamente aspectos do desenvolvimento, qualidade e desempenho de projetos de software. Elas fornecem dados objetivos que ajudam equipes a:</p>
+<ul>
+<li>Controlar e gerenciar processos de desenvolvimento.</li>
+<li>Identificar áreas que precisam de melhoria.</li>
+<li>Tomar decisões informadas baseadas em evidências.</li>
+</ul>
+<h2 is-upgraded><strong>Tipos de Métricas</strong></h2>
+<h3 is-upgraded><strong>1. Métricas de Processo</strong></h3>
+<p>Avaliam a eficiência e a eficácia dos processos de desenvolvimento de software.</p>
+<ul>
+<li><strong>Tempo de Ciclo</strong>: Tempo total desde o início até o fim de um processo.</li>
+<li><strong>Taxa de Retrabalho</strong>: Percentual de trabalho que precisou ser refeito devido a erros ou mudanças nos requisitos.</li>
+</ul>
+<p><strong>Exemplo</strong>: Se um projeto teve 20% de retrabalho, isso indica possíveis problemas na fase de requisitos ou na comunicação entre a equipe.</p>
+<h3 is-upgraded><strong>2. Métricas de Produto</strong></h3>
+<p>Focam no código-fonte e no produto final.</p>
+<ul>
+<li><strong>Linhas de Código (LOC)</strong>: Quantidade total de linhas escritas.</li>
+<li><strong>Complexidade Ciclomática</strong>: Medida da complexidade do código baseada no número de caminhos independentes.</li>
+</ul>
+<p><strong>Exemplo</strong>: Um módulo com alta complexidade ciclomática pode ser difícil de manter e testar.</p>
+<h3 is-upgraded><strong>3. Métricas de Qualidade</strong></h3>
+<p>Avaliam atributos como confiabilidade, eficiência e usabilidade.</p>
+<ul>
+<li><strong>Taxa de Defeitos por LOC</strong>: Número de defeitos encontrados dividido pelo total de linhas de código.</li>
+<li><strong>Tempo Médio Entre Falhas (MTBF)</strong>: Tempo médio de operação antes de ocorrer uma falha.</li>
+</ul>
+<p><strong>Exemplo</strong>: Um MTBF alto indica que o software é confiável e tem poucas interrupções.</p>
+<h3 is-upgraded><strong>4. Métricas de Uso</strong></h3>
+<p>Monitoram como o software é utilizado pelos usuários finais.</p>
+<ul>
+<li><strong>Taxa de Utilização de Funcionalidades</strong>: Percentual de funcionalidades usadas regularmente.</li>
+<li><strong>Retenção de Usuários</strong>: Percentual de usuários que continuam usando o software ao longo do tempo.</li>
+</ul>
+<p><strong>Exemplo</strong>: Se apenas 30% das funcionalidades são usadas frequentemente, pode ser necessário reavaliar a relevância das funcionalidades oferecidas.</p>
+<h3 is-upgraded><strong>5. Métricas de Projeto</strong></h3>
+<p>Avaliam a arquitetura e o design do software.</p>
+<ul>
+<li><strong>Acoplamento</strong>: Grau de interdependência entre módulos.</li>
+<li><strong>Coesão</strong>: Medida de quão relacionadas estão as responsabilidades de um único módulo.</li>
+</ul>
+<p><strong>Exemplo</strong>: Um alto acoplamento e baixa coesão indicam um design fraco, dificultando a manutenção e evolução do software.</p>
+<h3 is-upgraded><strong>6. Métricas de Teste</strong></h3>
+<p>Avaliam a eficácia e a eficiência dos processos de teste.</p>
+<ul>
+<li><strong>Cobertura de Código</strong>: Percentual do código que foi testado.</li>
+<li><strong>Taxa de Falhas de Teste</strong>: Percentual de testes que falharam em relação ao total executado.</li>
+</ul>
+<p><strong>Exemplo</strong>: Uma cobertura de código de 90% sugere que a maioria do código foi testado, mas ainda pode haver áreas críticas não cobertas.</p>
+<h2 is-upgraded><strong>Importância das Métricas</strong></h2>
+<ul>
+<li><strong>Tomada de Decisão Informada</strong>: Dados concretos permitem decisões baseadas em evidências, não em intuição.</li>
+<li><strong>Identificação de Problemas</strong>: Métricas destacam áreas problemáticas que precisam de atenção imediata.</li>
+<li><strong>Otimização de Processos</strong>: Permitem melhorar continuamente os processos de desenvolvimento e manutenção.</li>
+</ul>
+<h2 is-upgraded><strong>Consequências da Ausência de Métricas</strong></h2>
+<ul>
+<li><strong>Decisões Baseadas em Intuição</strong>: A falta de dados leva a decisões menos precisas.</li>
+<li><strong>Falta de Transparência</strong>: Dificuldade em comunicar o progresso e os problemas aos stakeholders.</li>
+<li><strong>Perda de Oportunidades de Melhoria</strong>: Sem métricas, é difícil identificar onde e como melhorar.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Aula 14: 
+Estimativas de Software" duration="0">
+        <h2 is-upgraded><strong>Introdução à Estimativa de Software</strong></h2>
+<p>Estimativas precisas são cruciais para o sucesso de qualquer projeto de software. Elas ajudam a:</p>
+<ul>
+<li>Planejar recursos e esforços necessários.</li>
+<li>Definir cronogramas realistas.</li>
+<li>Gerenciar expectativas de stakeholders.</li>
+</ul>
+<h2 is-upgraded><strong>Técnicas de Estimativa</strong></h2>
+<h3 is-upgraded><strong>1. Estimativa por Analogias</strong></h3>
+<p>Compara o projeto atual com projetos anteriores semelhantes.</p>
+<ul>
+<li><strong>Como Funciona</strong>: Identifica projetos passados com escopo e complexidade similares e ajusta as estimativas com base nas diferenças identificadas.</li>
+<li><strong>Vantagens</strong>: Rápido e utiliza dados reais.</li>
+<li><strong>Desvantagens</strong>: Requer histórico de projetos similares.</li>
+</ul>
+<p><strong>Exemplo</strong>: Se um aplicativo de e-commerce anterior levou 6 meses para ser desenvolvido, um novo com funcionalidades adicionais pode ser estimado em 8 meses.</p>
+<h3 is-upgraded><strong>2. Estimativa Paramétrica</strong></h3>
+<p>Usa modelos matemáticos baseados em parâmetros específicos.</p>
+<ul>
+<li><strong>Como Funciona</strong>: Aplica equações que relacionam tamanho, esforço e tempo.</li>
+<li><strong>Vantagens</strong>: Pode ser muito preciso com dados corretos.</li>
+<li><strong>Desvantagens</strong>: Complexo e requer dados históricos precisos.</li>
+</ul>
+<p><strong>Exemplo</strong>: Usando o modelo COCOMO (Constructive Cost Model) para estimar o esforço com base em linhas de código estimadas.</p>
+<h3 is-upgraded><strong>3. Estimativa por Pontos de Função/Caso de Uso</strong></h3>
+<p>Baseia-se na quantificação de funcionalidades ou casos de uso.</p>
+<ul>
+<li><strong>Como Funciona</strong>: Atribui valores numéricos às funcionalidades com base em sua complexidade.</li>
+<li><strong>Vantagens</strong>: Foca no que o sistema faz, não em como é implementado.</li>
+<li><strong>Desvantagens</strong>: Pode ser subjetivo ao classificar a complexidade.</li>
+</ul>
+<p><strong>Exemplo</strong>: Uma funcionalidade simples recebe 3 pontos, média 4 pontos e complexa 6 pontos; o total de pontos é usado para estimar o esforço.</p>
+<h3 is-upgraded><strong>4. Estimativas Heurísticas</strong></h3>
+<p>Baseadas na experiência e julgamento da equipe.</p>
+<ul>
+<li><strong>Como Funciona</strong>: Especialistas fazem estimativas com base em sua expertise.</li>
+<li><strong>Vantagens</strong>: Rápido e utiliza conhecimento tácito.</li>
+<li><strong>Desvantagens</strong>: Pode ser influenciado por vieses pessoais.</li>
+</ul>
+<p><strong>Exemplo</strong>: Um desenvolvedor experiente estima que uma funcionalidade levará 5 dias com base em trabalhos anteriores semelhantes.</p>
+<h3 is-upgraded><strong>5. Planejamento Ágil</strong></h3>
+<p>Estimativas contínuas ajustadas ao longo do tempo.</p>
+<ul>
+<li><strong>Como Funciona</strong>: Utiliza técnicas como Planning Poker para estimar esforço em unidades relativas (Story Points).</li>
+<li><strong>Vantagens</strong>: Flexível e adaptável a mudanças.</li>
+<li><strong>Desvantagens</strong>: Requer disciplina na reavaliação constante.</li>
+</ul>
+<p><strong>Exemplo</strong>: Durante uma sprint, a equipe reavalia as estimativas com base no progresso e feedback recebido.</p>
+<h2 is-upgraded><strong>Desafios nas Estimativas</strong></h2>
+<ul>
+<li><strong>Incerteza dos Requisitos</strong>: Mudanças nos requisitos afetam as estimativas.</li>
+<li><strong>Complexidade Técnica</strong>: Tecnologias novas ou desconhecidas aumentam o risco.</li>
+<li><strong>Pressão de Stakeholders</strong>: Expectativas irrealistas podem influenciar estimativas.</li>
+</ul>
+<h2 is-upgraded><strong>Boas Práticas</strong></h2>
+<ul>
+<li><strong>Documentação</strong>: Registre todas as premissas e bases das estimativas.</li>
+<li><strong>Revisão por Pares</strong>: Valide estimativas com outros membros da equipe.</li>
+<li><strong>Ajustes Contínuos</strong>: Revise estimativas conforme novas informações surgem.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Aula 15a: 
+Desenvolvimento Ágil e Extreme Programming (XP)" duration="0">
+        <h2 is-upgraded><strong>O Manifesto Ágil</strong></h2>
+<p>Em 2001, um grupo de desenvolvedores criou o Manifesto Ágil, que prioriza:</p>
+<ol type="1">
+<li><strong>Indivíduos e Interações</strong> sobre processos e ferramentas.</li>
+<li><strong>Software em Funcionamento</strong> sobre documentação abrangente.</li>
+<li><strong>Colaboração com o Cliente</strong> sobre negociação de contratos.</li>
+<li><strong>Responder a Mudanças</strong> sobre seguir um plano.</li>
+</ol>
+<h2 is-upgraded><strong>Os 12 Princípios do Manifesto Ágil</strong></h2>
+<p>Alguns dos princípios incluem:</p>
+<ul>
+<li><strong>Satisfação do Cliente</strong>: Entrega contínua de software de valor.</li>
+<li><strong>Bem-vindo às Mudanças</strong>: Adaptação rápida às mudanças nos requisitos.</li>
+<li><strong>Entrega Frequente</strong>: Software funcional entregue em curtos períodos.</li>
+<li><strong>Trabalho em Equipe</strong>: Colaboração diária entre negócio e desenvolvimento.</li>
+<li><strong>Simplicidade</strong>: Maximizar a quantidade de trabalho não feito.</li>
+</ul>
+<h2 is-upgraded><strong>Extreme Programming (XP)</strong></h2>
+<h3 is-upgraded><strong>Características Principais</strong></h3>
+<ul>
+<li><strong>Desenvolvimento Orientado a Testes (TDD)</strong>: Escrever testes antes do código.</li>
+<li><strong>Programação em Pares</strong>: Dois desenvolvedores trabalham juntos no mesmo código.</li>
+<li><strong>Integração Contínua</strong>: Código integrado e testado várias vezes ao dia.</li>
+<li><strong>Refatoração Constante</strong>: Melhorar o design do código sem alterar sua funcionalidade.</li>
+</ul>
+<h3 is-upgraded><strong>Fluxo de um Projeto XP</strong></h3>
+<ol type="1">
+<li><strong>Reunião de Planejamento</strong>: Coleta de histórias do usuário.</li>
+<li><strong>Definição de Iterações</strong>: Planejamento de entregas em ciclos curtos (1-3 semanas).</li>
+<li><strong>Desenvolvimento</strong>: Codificação com TDD e programação em pares.</li>
+<li><strong>Stand Up Meetings</strong>: Reuniões diárias para alinhamento.</li>
+<li><strong>Entrega</strong>: Ao final de cada iteração, o software é entregue e avaliado.</li>
+</ol>
+<p><strong>Exemplo Prático</strong>: Em um projeto XP, a equipe recebe uma história do usuário para implementar um sistema de login. Eles escrevem testes que o sistema deve passar (por exemplo, autenticação bem-sucedida, falha com credenciais erradas), escrevem o código para passar nesses testes e refatoram conforme necessário.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Aula 15b: 
+Framework Scrum" duration="0">
+        <h2 is-upgraded><strong>Introdução ao Scrum</strong></h2>
+<p>O Scrum é um framework ágil que enfatiza:</p>
+<ul>
+<li><strong>Entregas Incrementais</strong>: Trabalho dividido em Sprints (normalmente 2-4 semanas).</li>
+<li><strong>Transparência</strong>: Uso de artefatos e reuniões para manter todos informados.</li>
+<li><strong>Inspeção e Adaptação</strong>: Revisões constantes do trabalho e processos.</li>
+</ul>
+<h2 is-upgraded><strong>Papéis Essenciais</strong></h2>
+<h3 is-upgraded><strong>Product Owner</strong></h3>
+<ul>
+<li>Define a visão do produto.</li>
+<li>Gerencia o <strong>Product Backlog</strong> (lista priorizada de requisitos).</li>
+<li>Comunica-se com stakeholders e a equipe de desenvolvimento.</li>
+</ul>
+<h3 is-upgraded><strong>Scrum Master</strong></h3>
+<ul>
+<li>Facilita o processo Scrum.</li>
+<li>Remove impedimentos que atrapalham a equipe.</li>
+<li>Assegura que o time siga os valores e práticas do Scrum.</li>
+</ul>
+<h3 is-upgraded><strong>Time de Desenvolvimento</strong></h3>
+<ul>
+<li>Auto-organizado e multifuncional.</li>
+<li>Responsável por entregar incrementos de produto &#34;Pronto&#34;.</li>
+</ul>
+<h2 is-upgraded><strong>Eventos Scrum</strong></h2>
+<h3 is-upgraded><strong>Sprint Planning</strong></h3>
+<ul>
+<li>Definição do objetivo do Sprint.</li>
+<li>Seleção de itens do Product Backlog para o <strong>Sprint Backlog</strong>.</li>
+</ul>
+<h3 is-upgraded><strong>Daily Stand-up</strong></h3>
+<ul>
+<li>Reuniões diárias de 15 minutos.</li>
+<li>Cada membro responde: <ul>
+<li>O que fiz ontem?</li>
+<li>O que farei hoje?</li>
+<li>Há algum impedimento?</li>
+</ul>
+</li>
+</ul>
+<h3 is-upgraded><strong>Sprint Review</strong></h3>
+<ul>
+<li>Demonstração do incremento de produto ao final do Sprint.</li>
+<li>Feedback dos stakeholders é coletado.</li>
+</ul>
+<h3 is-upgraded><strong>Sprint Retrospective</strong></h3>
+<ul>
+<li>Equipe reflete sobre o Sprint passado.</li>
+<li>Identifica o que funcionou bem e o que pode ser melhorado.</li>
+</ul>
+<h2 is-upgraded><strong>Artefatos do Scrum</strong></h2>
+<ul>
+<li><strong>Product Backlog</strong>: Lista priorizada de tudo que é necessário no produto.</li>
+<li><strong>Sprint Backlog</strong>: Itens selecionados para o Sprint atual, mais um plano para entregá-los.</li>
+<li><strong>Incremento</strong>: Soma de todos os itens do Product Backlog concluídos durante o Sprint.</li>
+</ul>
+<h2 is-upgraded><strong>Uso do Kanban no Scrum</strong></h2>
+<ul>
+<li><strong>Quadro Kanban</strong>: Visualiza o fluxo de trabalho com colunas como &#34;A Fazer&#34;, &#34;Em Progresso&#34; e &#34;Concluído&#34;.</li>
+<li>Ajuda a identificar gargalos e melhorar o fluxo de trabalho.</li>
+</ul>
+<p><strong>Exemplo Prático</strong>: Durante o Sprint Planning, a equipe seleciona as funcionalidades de &#34;Carrinho de Compras&#34; para desenvolver. Diariamente, eles se reúnem para discutir o progresso. Ao final do Sprint, apresentam a funcionalidade aos stakeholders e recebem feedback, que é incorporado nos próximos Sprints.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Aula 16a: 
+Estratégias de Testes de Software" duration="0">
+        <h2 is-upgraded><strong>Importância dos Testes de Software</strong></h2>
+<p>Testes são cruciais para:</p>
+<ul>
+<li><strong>Garantir a Qualidade</strong>: Identificar e corrigir defeitos.</li>
+<li><strong>Validar Requisitos</strong>: Assegurar que o software atende às necessidades do usuário.</li>
+<li><strong>Melhoria Contínua</strong>: Fornecer feedback para aprimoramentos futuros.</li>
+</ul>
+<h2 is-upgraded><strong>Tipos de Testes</strong></h2>
+<h3 is-upgraded><strong>1. Testes Unitários</strong></h3>
+<ul>
+<li><strong>Objetivo</strong>: Testar partes individuais do código, como funções ou métodos.</li>
+<li><strong>Benefícios</strong>: Identificação precoce de defeitos, facilita refatoração.</li>
+</ul>
+<p><strong>Exemplo</strong>: Testar se a função <code>calcularDesconto()</code> retorna o valor correto dado um preço e uma porcentagem de desconto.</p>
+<h3 is-upgraded><strong>2. Testes de Integração</strong></h3>
+<ul>
+<li><strong>Objetivo</strong>: Verificar a interação entre diferentes módulos ou componentes.</li>
+<li><strong>Benefícios</strong>: Identifica problemas na interface entre componentes.</li>
+</ul>
+<p><strong>Exemplo</strong>: Testar a comunicação entre o módulo de pagamento e o módulo de confirmação de pedido.</p>
+<h3 is-upgraded><strong>3. Testes de Sistema</strong></h3>
+<ul>
+<li><strong>Objetivo</strong>: Avaliar o sistema completo em um ambiente integrado.</li>
+<li><strong>Benefícios</strong>: Verifica o cumprimento dos requisitos funcionais e não funcionais.</li>
+</ul>
+<p><strong>Exemplo</strong>: Testar todo o fluxo de compra em um site de e-commerce, desde a seleção de produtos até a confirmação do pedido.</p>
+<h3 is-upgraded><strong>4. Testes de Aceitação</strong></h3>
+<ul>
+<li><strong>Objetivo</strong>: Validar se o software atende às expectativas dos usuários finais.</li>
+<li><strong>Benefícios</strong>: Garantia final antes da implantação.</li>
+</ul>
+<p><strong>Exemplo</strong>: Usuários testam a nova funcionalidade de chat em um aplicativo para verificar se atende às suas necessidades.</p>
+<h2 is-upgraded><strong>Abordagens de Teste</strong></h2>
+<h3 is-upgraded><strong>1. Testes de Caixa-Branca</strong></h3>
+<ul>
+<li><strong>Descrição</strong>: O testador tem conhecimento do código-fonte.</li>
+<li><strong>Foco</strong>: Verificar a lógica interna, fluxos de controle e estruturas de dados.</li>
+</ul>
+<p><strong>Exemplo</strong>: Analisar caminhos de decisão dentro de um algoritmo de classificação para garantir que todos os casos foram cobertos.</p>
+<h3 is-upgraded><strong>2. Testes de Caixa-Preta</strong></h3>
+<ul>
+<li><strong>Descrição</strong>: O testador não tem acesso ao código-fonte.</li>
+<li><strong>Foco</strong>: Validar funcionalidades com base nos requisitos.</li>
+</ul>
+<p><strong>Exemplo</strong>: Testar se o sistema rejeita senhas fracas sem saber como a validação é implementada internamente.</p>
+<h2 is-upgraded><strong>Combinação de Estratégias</strong></h2>
+<p>Utilizar ambas as abordagens maximiza a cobertura de testes, identificando defeitos tanto na implementação quanto no comportamento funcional.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Aula 16b: 
+Tipos de Testes de Software" duration="0">
+        <h2 is-upgraded><strong>1. Testes de Regressão</strong></h2>
+<ul>
+<li><strong>Objetivo</strong>: Garantir que alterações no código não introduziram novos defeitos.</li>
+<li><strong>Quando Usar</strong>: Após correções de bugs ou adição de novas funcionalidades.</li>
+</ul>
+<p><strong>Exemplo</strong>: Depois de atualizar a função de cálculo de impostos, executar testes para verificar se outras funcionalidades financeiras ainda funcionam corretamente.</p>
+<h2 is-upgraded><strong>2. Testes de Desempenho</strong></h2>
+<ul>
+<li><strong>Objetivo</strong>: Avaliar a capacidade do sistema sob diferentes cargas.<ul>
+<li><strong>Testes de Carga</strong>: Avaliam o desempenho sob carga esperada.</li>
+<li><strong>Testes de Estresse</strong>: Avaliam os limites máximos do sistema.</li>
+<li><strong>Testes de Volume</strong>: Testam o sistema com grandes volumes de dados.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Exemplo</strong>: Simular 10.000 usuários acessando simultaneamente um site para verificar tempos de resposta.</p>
+<h2 is-upgraded><strong>3. Testes de Segurança</strong></h2>
+<ul>
+<li><strong>Objetivo</strong>: Identificar vulnerabilidades e garantir a proteção de dados.</li>
+</ul>
+<p><strong>Exemplo</strong>: Realizar testes de penetração para descobrir possíveis brechas de segurança.</p>
+<h2 is-upgraded><strong>4. Testes de Usabilidade</strong></h2>
+<ul>
+<li><strong>Objetivo</strong>: Avaliar a facilidade de uso e a experiência do usuário.</li>
+</ul>
+<p><strong>Exemplo</strong>: Observar usuários navegando em um novo design de interface para identificar dificuldades.</p>
+<h2 is-upgraded><strong>5. Testes de Compatibilidade</strong></h2>
+<ul>
+<li><strong>Objetivo</strong>: Garantir que o software funcione em diferentes ambientes.</li>
+</ul>
+<p><strong>Exemplo</strong>: Testar um aplicativo web em diferentes navegadores e dispositivos.</p>
+<h2 is-upgraded><strong>6. Testes de Instalação</strong></h2>
+<ul>
+<li><strong>Objetivo</strong>: Verificar se a instalação e configuração do software ocorrem sem problemas.</li>
+</ul>
+<p><strong>Exemplo</strong>: Testar o instalador em diferentes sistemas operacionais para assegurar que todas as dependências são corretamente instaladas.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Aula 17: 
+Automatização de Testes de Software" duration="0">
+        <h2 is-upgraded><strong>Por que Automatizar Testes?</strong></h2>
+<ul>
+<li><strong>Eficiência</strong>: Execução rápida de testes repetitivos.</li>
+<li><strong>Consistência</strong>: Mesmos testes são executados da mesma forma todas as vezes.</li>
+<li><strong>Feedback Rápido</strong>: Identificação rápida de defeitos após mudanças no código.</li>
+</ul>
+<h2 is-upgraded><strong>Tipos de Testes Automatizáveis</strong></h2>
+<h3 is-upgraded><strong>1. Testes Unitários Automatizados</strong></h3>
+<ul>
+<li>Utilizam frameworks como JUnit (Java), NUnit (.NET), PyTest (Python).</li>
+</ul>
+<p><strong>Exemplo</strong>: Automatizar testes para verificar se funções matemáticas retornam resultados esperados.</p>
+<h3 is-upgraded><strong>2. Testes de Integração Automatizados</strong></h3>
+<ul>
+<li>Testam a interação entre módulos, podendo utilizar ferramentas como Selenium para aplicações web.</li>
+</ul>
+<p><strong>Exemplo</strong>: Automatizar o fluxo de login e logout em um aplicativo web.</p>
+<h3 is-upgraded><strong>3. Testes de Regressão Automatizados</strong></h3>
+<ul>
+<li>Reexecutam casos de teste existentes para garantir que alterações não introduziram defeitos.</li>
+</ul>
+<p><strong>Exemplo</strong>: Após uma atualização, automatizar a execução de todos os testes para confirmar que o sistema ainda funciona como esperado.</p>
+<h3 is-upgraded><strong>4. Testes de Desempenho Automatizados</strong></h3>
+<ul>
+<li>Utilizam ferramentas como JMeter e LoadRunner.</li>
+</ul>
+<p><strong>Exemplo</strong>: Automatizar testes que simulam 1.000 usuários simultâneos acessando uma API.</p>
+<h2 is-upgraded><strong>Benefícios da Automatização</strong></h2>
+<ul>
+<li><strong>Redução de Esforço Manual</strong>: Libera testadores para focar em testes exploratórios.</li>
+<li><strong>Melhoria da Cobertura</strong>: Possibilidade de executar mais testes em menos tempo.</li>
+<li><strong>Integração com CI/CD</strong>: Automatiza testes em pipelines de integração e entrega contínua.</li>
+</ul>
+<h2 is-upgraded><strong>Desafios da Automatização</strong></h2>
+<ul>
+<li><strong>Habilidades Técnicas Necessárias</strong>: Equipe precisa conhecer ferramentas e linguagens de script.</li>
+<li><strong>Manutenção de Scripts</strong>: Scripts de teste podem quebrar com mudanças no software.</li>
+</ul>
+<h2 is-upgraded><strong>Boas Práticas</strong></h2>
+<ul>
+<li><strong>Escolher as Ferramentas Certas</strong>: Alinhar ferramentas com as necessidades do projeto.</li>
+<li><strong>Desenvolver Testes Robustos</strong>: Escrever scripts que sejam resistentes a pequenas mudanças na interface.</li>
+<li><strong>Revisar e Atualizar Testes Regularmente</strong>: Garantir que os testes permanecem relevantes.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Aula 18: 
+Integração, Entrega e Implantação Contínua" duration="0">
+        <h2 is-upgraded><strong>Integração Contínua (CI)</strong></h2>
+<h3 is-upgraded><strong>Conceito</strong></h3>
+<p>Processo de integrar código regularmente (várias vezes ao dia) em um repositório compartilhado, seguido de verificação automatizada.</p>
+<h3 is-upgraded><strong>Benefícios</strong></h3>
+<ul>
+<li><strong>Detecção Precoce de Defeitos</strong>: Problemas são identificados rapidamente.</li>
+<li><strong>Redução de Conflitos de Merge</strong>: Integrações frequentes reduzem conflitos complexos.</li>
+</ul>
+<h3 is-upgraded><strong>Práticas Comuns</strong></h3>
+<ul>
+<li><strong>Commit Diário</strong>: Desenvolvedores fazem commits frequentes.</li>
+<li><strong>Build Automatizado</strong>: Sistema que compila o código automaticamente após cada commit.</li>
+<li><strong>Testes Automatizados</strong>: Execução de testes para validar a integração.</li>
+</ul>
+<h2 is-upgraded><strong>Entrega Contínua (CD)</strong></h2>
+<h3 is-upgraded><strong>Conceito</strong></h3>
+<p>Extensão da integração contínua, onde o software está sempre pronto para ser liberado em produção.</p>
+<h3 is-upgraded><strong>Benefícios</strong></h3>
+<ul>
+<li><strong>Feedback Rápido dos Usuários</strong>: Novas funcionalidades chegam rapidamente aos usuários.</li>
+<li><strong>Redução de Risco</strong>: Pequenas mudanças são mais fáceis de gerenciar.</li>
+</ul>
+<h3 is-upgraded><strong>Práticas Comuns</strong></h3>
+<ul>
+<li><strong>Pipelines de Deploy</strong>: Automação do processo de entrega desde o commit até a implantação.</li>
+<li><strong>Ambientes Automatizados</strong>: Criação e gerenciamento automáticos de ambientes de teste.</li>
+</ul>
+<h2 is-upgraded><strong>Implantação Contínua</strong></h2>
+<h3 is-upgraded><strong>Conceito</strong></h3>
+<p>Vai além da entrega contínua, onde cada alteração que passa nos testes automatizados é implantada automaticamente em produção.</p>
+<h3 is-upgraded><strong>Benefícios</strong></h3>
+<ul>
+<li><strong>Agilidade Máxima</strong>: Tempo mínimo entre desenvolvimento e disponibilidade ao usuário.</li>
+<li><strong>Respostas Rápidas a Problemas</strong>: Correções podem ser implantadas imediatamente.</li>
+</ul>
+<h3 is-upgraded><strong>Desafios</strong></h3>
+<ul>
+<li><strong>Confiança nos Testes Automatizados</strong>: Necessidade de uma suíte de testes abrangente.</li>
+<li><strong>Cultura Organizacional</strong>: Requer mudanças na forma como a equipe e a organização operam.</li>
+</ul>
+<h2 is-upgraded><strong>Ferramentas Comuns</strong></h2>
+<ul>
+<li><strong>Jenkins</strong>: Automação de builds e deploys.</li>
+<li><strong>GitLab CI/CD</strong>: Pipelines integrados ao GitLab.</li>
+<li><strong>CircleCI, Travis CI</strong>: Serviços de CI/CD na nuvem.</li>
+</ul>
+<h2 is-upgraded><strong>Exemplos Reais</strong></h2>
+<ul>
+<li><strong>Netflix</strong>: Implantação contínua para entregar atualizações frequentes aos usuários.</li>
+<li><strong>Amazon</strong>: Milhares de deploys em produção por dia.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Aula 19: 
+Verificação, Validação e Gestão de Requisitos" duration="0">
+        <h2 is-upgraded><strong>Verificação de Requisitos</strong></h2>
+<h3 is-upgraded><strong>Objetivo</strong></h3>
+<p>Assegurar que os requisitos foram definidos corretamente e estão de acordo com os padrões estabelecidos.</p>
+<h3 is-upgraded><strong>Atividades Comuns</strong></h3>
+<ul>
+<li><strong>Revisões Técnicas</strong>: Avaliação detalhada dos requisitos por especialistas.</li>
+<li><strong>Checklists</strong>: Listas de verificação para garantir que todos os aspectos foram cobertos.</li>
+</ul>
+<p><strong>Exemplo</strong>: Verificar se todos os requisitos estão claros, não ambíguos e testáveis.</p>
+<h2 is-upgraded><strong>Validação de Requisitos</strong></h2>
+<h3 is-upgraded><strong>Objetivo</strong></h3>
+<p>Garantir que os requisitos atendem às necessidades e expectativas dos stakeholders.</p>
+<h3 is-upgraded><strong>Atividades Comuns</strong></h3>
+<ul>
+<li><strong>Prototipagem</strong>: Criação de modelos funcionais para visualizar requisitos.</li>
+<li><strong>Testes de Aceitação</strong>: Definição de critérios que o software deve cumprir.</li>
+</ul>
+<p><strong>Exemplo</strong>: Validar com o cliente se a interface proposta atende às necessidades operacionais.</p>
+<h2 is-upgraded><strong>Gestão de Requisitos</strong></h2>
+<h3 is-upgraded><strong>Objetivo</strong></h3>
+<p>Controlar o escopo, mudanças e rastreabilidade dos requisitos ao longo do projeto.</p>
+<h3 is-upgraded><strong>Atividades Comuns</strong></h3>
+<ul>
+<li><strong>Controle de Mudanças</strong>: Processo formal para solicitar, avaliar e implementar mudanças.</li>
+<li><strong>Rastreabilidade</strong>: Capacidade de rastrear cada requisito desde a origem até a implementação.</li>
+</ul>
+<p><strong>Exemplo</strong>: Usar uma ferramenta como o Jira para registrar requisitos, mudanças solicitadas e seu status.</p>
+<h2 is-upgraded><strong>Importância Combinada</strong></h2>
+<ul>
+<li><strong>Redução de Retrabalho</strong>: Evita desenvolvimentos baseados em requisitos incorretos ou incompletos.</li>
+<li><strong>Alinhamento com Stakeholders</strong>: Garantia de que o produto final atenderá às expectativas.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Aula Prática: 
+Estimativa de Software com Trello" duration="0">
+        <h2 is-upgraded><strong>Objetivo da Atividade</strong></h2>
+<p>Desenvolver habilidades de planejamento e colaboração através da criação de cronogramas de projeto utilizando o <strong>Trello</strong> e ferramentas como <strong>Placker</strong> ou <strong>Elegantt</strong>.</p>
+<h2 is-upgraded><strong>Contexto do Projeto</strong></h2>
+<ul>
+<li><strong>Aplicação Java</strong>: Acessa notas e faltas armazenadas em um banco de dados <strong>MySQL</strong>.</li>
+<li><strong>Metodologias</strong>: Seguir princípios de <strong>Metodologias Ágeis</strong> e o modelo de desenvolvimento <strong>Espiral</strong>.</li>
+</ul>
+<h2 is-upgraded><strong>Estruturação no Trello</strong></h2>
+<h3 is-upgraded><strong>Criação de Quadros e Listas</strong></h3>
+<ul>
+<li><strong>Listas</strong>: <ul>
+<li><strong>To Do</strong>: Tarefas a serem iniciadas.</li>
+<li><strong>Doing</strong>: Tarefas em progresso.</li>
+<li><strong>Done</strong>: Tarefas concluídas.</li>
+</ul>
+</li>
+</ul>
+<h3 is-upgraded><strong>Detalhamento de Tarefas</strong></h3>
+<ul>
+<li><strong>Descrição</strong>: Detalhar o que precisa ser feito.</li>
+<li><strong>Estimativas</strong>: Utilizar a técnica de <strong>Planning Poker</strong> para estimar o esforço necessário.</li>
+</ul>
+<h2 is-upgraded><strong>Exemplo de Tarefas</strong></h2>
+<ol type="1">
+<li><strong>Configurar Ambiente de Desenvolvimento</strong><ul>
+<li><strong>Descrição</strong>: Instalar JDK, configurar IDE, conectar ao banco MySQL.</li>
+<li><strong>Estimativa</strong>: 3 pontos.</li>
+</ul>
+</li>
+<li><strong>Desenvolver Funcionalidade de Login</strong><ul>
+<li><strong>Descrição</strong>: Implementar autenticação de usuários.</li>
+<li><strong>Estimativa</strong>: 5 pontos.</li>
+</ul>
+</li>
+<li><strong>Implementar Consulta de Notas</strong><ul>
+<li><strong>Descrição</strong>: Recuperar e exibir notas do banco de dados.</li>
+<li><strong>Estimativa</strong>: 8 pontos.</li>
+</ul>
+</li>
+<li><strong>Testes Unitários das Funcionalidades</strong><ul>
+<li><strong>Descrição</strong>: Escrever testes para as funções desenvolvidas.</li>
+<li><strong>Estimativa</strong>: 5 pontos.</li>
+</ul>
+</li>
+</ol>
+<h2 is-upgraded><strong>Uso de Ferramentas de Planejamento</strong></h2>
+<ul>
+<li><strong>Placker/Elegantt</strong>: Integrar com o Trello para visualizar cronogramas e dependências.</li>
+</ul>
+<h2 is-upgraded><strong>Metodologia Aplicada</strong></h2>
+<ul>
+<li><strong>Modelo Espiral</strong>: Iterativo, focado na identificação e mitigação de riscos.</li>
+<li><strong>Metodologias Ágeis</strong>: Flexibilidade e adaptação a mudanças durante o desenvolvimento.</li>
+</ul>
+<h2 is-upgraded><strong>Resultados Esperados</strong></h2>
+<ul>
+<li><strong>Cronograma Realista</strong>: Baseado nas estimativas coletivas da equipe.</li>
+<li><strong>Colaboração Eficaz</strong>: Equipe alinhada nos objetivos e prazos.</li>
+<li><strong>Entregáveis de Qualidade</strong>: Funcionalidades implementadas e testadas conforme os requisitos.</li>
+</ul>
+<p>Conclusão</p>
+<p>Este material forneceu uma revisão detalhada dos principais tópicos abordados nas aulas de Engenharia de Software, incluindo conceitos teóricos e aplicações práticas. A compreensão aprofundada desses temas é essencial para o desenvolvimento de software de alta qualidade e para a evolução profissional na área.</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

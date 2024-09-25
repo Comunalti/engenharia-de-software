@@ -1,0 +1,9 @@
+A **Aula 19** aborda três processos fundamentais no desenvolvimento de software: **verificação, validação e gestão de requisitos**. 
+
+- **Verificação de Requisitos** garante que os requisitos são claros, consistentes e aderem aos padrões estabelecidos, utilizando métodos como revisões técnicas e checklists.
+- **Validação de Requisitos** verifica se os requisitos atendem às necessidades dos stakeholders e são implementáveis. Prototipagem e testes de aceitação são usados para confirmar que o sistema cumpre os requisitos esperados.
+- **Gestão de Requisitos** envolve o controle contínuo de mudanças, rastreamento e priorização dos requisitos ao longo do ciclo de vida do projeto. Métodos como rastreabilidade e priorização garantem que o escopo seja mantido e ajustado conforme necessário.
+
+Exemplos reais incluem sistemas bancários e de e-commerce, onde esses processos evitam problemas futuros, garantem a adequação do sistema e melhoram a qualidade do produto final.
+
+A combinação desses três processos é essencial para reduzir retrabalho, mitigar riscos e garantir que o software final atenda às expectativas dos clientes e do negócio.

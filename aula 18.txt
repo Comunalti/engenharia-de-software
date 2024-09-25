@@ -1,0 +1,7 @@
+A **Aula 18** aborda os conceitos de **Integração, Entrega e Implantação Contínua** de software, práticas fundamentais na Engenharia de Software moderna. O processo de integração envolve a combinação de módulos e sistemas de software, utilizando abordagens como **integração incremental** e **Big Bang**, com destaque para a importância de testes e automação para garantir a qualidade e coesão dos sistemas.
+
+A **entrega de software** é o momento em que o produto é disponibilizado para os usuários, podendo ser **parcial**, **incremental** ou **total**, sendo essencial o planejamento, testes rigorosos e suporte pós-entrega. 
+
+A **implantação contínua** automatiza o processo de entrega em produção, garantindo que novas versões sejam lançadas frequentemente e com segurança, sem intervenção humana. Ferramentas de CI/CD, monitoramento, e gerenciamento de dependências são essenciais para o sucesso dessa prática.
+
+Exemplos práticos incluem empresas como **Netflix**, **Amazon** e **GitHub**, que utilizam essas técnicas para manter alta qualidade e disponibilidade de seus serviços. A aula destaca ainda os desafios culturais e técnicos, mas reforça os benefícios em termos de redução de riscos e melhoria contínua.
